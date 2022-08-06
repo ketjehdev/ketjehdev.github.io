@@ -1,4 +1,7 @@
 /* stylesheet class splash screen */
+::-webkit-scrollbar {
+    display: none;
+}
 .splash {
     position: fixed;
     top: 0;
