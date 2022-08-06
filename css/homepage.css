@@ -22,7 +22,6 @@
 }
 
 .main .content {
-    font-weight: bold;
     font-size: 20px;
     width: 40%;
     padding: 28px;
@@ -44,11 +43,6 @@
     width: 60%;
 }
 
-/* .main .imgBx img {
-    width: 80%;
-    height: 80%;
-} */
-
 @media (max-width: 780px) {
     .main {
         width: 100%;
@@ -64,7 +58,7 @@
 
     .main .content {
         position: relative;
-        top: 7em;
+        top: 6em;
         width: 100%;
         padding: 10px;
         bottom: 0;
@@ -81,7 +75,7 @@
 
     .main .content {
         position: relative;
-        top: 7em;
+        top: 5em;
         width: 100%;
         padding: 10px;
         bottom: 0;
