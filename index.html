@@ -19,24 +19,71 @@
     <meta name="author" content="Neville Jeremy">
     <!-- title -->
     <title>Neville Jeremy | Web Developer</title>
-    <!-- link customize css : nevillespace -->
+    <!-- favicon web : nevillespace -->
+    <link rel="icon" href="./assets/img/logo.png">
+    <!-- customize css : nevillespace -->
     <link rel="stylesheet" href="./css/homepage.css">
-    <!-- link API AOS : nevillespace -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- link API Boostrap 5.2 : nevillespace -->
+    <!-- Boostrap 5.2 : nevillespace -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <!-- header : navbar -->
+    <nav class="navbar navbar-expand-lg position-fixed navbar-light" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; width: 100%; background: #fff; z-index: 10;">
+		<div class="container-fluid">
+			<a href="/" class="navbar-brand my-0">
+                <img src="./assets/img/logo.png" height="45" alt="nevillespace" class="mx-3 my-0 logo">
+                <strong>nevillespace.</strong>
+            </a> 
+
+			<button type="button" class="navbar-toggler" style="border: 0;" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav ms-auto">
+
+                    <a href="{{ route('home') }}" class="nav-item nav-link text-center @if($title == 'Home') active @endif mx-4">Home</a>                        
+                        <div class="dropdown">
+                                <a class="text-center nav-item nav-link text-center mx-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                                </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li>           
+                                    <a class="dropdown-item" href="">
+                                        <div class="d-flex align-items-center">
+                                            <img src="" height="60" class="rounded-circle" alt="">
+                                            <span class="mx-2">Daftar Mentor/Fasilitator</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>           
+                                    <a class="dropdown-item @if($title == 'Student') active @endif" href="{{ route('student') }}">
+                                    <div class="d-flex align-items-center">
+                                        <img src="" height="60" class="rounded-circle" alt="">
+                                            <span class="mx-2">Daftar E-Learning</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="" class="nav-item nav-link text-center @if($title == 'Magang') active @endif mx-4">About Me</a>
+                        <a href="" class="nav-item nav-link @if($title == 'Semua Kelas') active @endif  text-center  mx-4">Service</a>
+                        <a href="" class="nav-item nav-link @if($title == 'Semua Kelas') active @endif  text-center  mx-4">FAQ</a>
+                </div>
+
+                <div class="navbar-nav ms-auto">
+                    <a href="" class="bg-danger nav-item nav-link btn btn-success text-light px-4 mx-4" style="border-radius: 20px; font-weight: bold; border: 0">Contact Me</a>
+                </div>
+			</div>
+		</div>
+	</nav>
+
     <h3>Neville Jeremy</h3>
 
-    <!-- script API AOS : nevillespace -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- initialize AOS : nevillespace -->
-    <script>
-        AOS.init({once:true});
-    </script>
-    <!-- script API bootstrap 5.2 & popperjs 2.11.5 : nevillespace -->
+    <!-- bootstrap 5.2 & popperjs 2.11.5 : nevillespace -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
