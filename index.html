@@ -47,34 +47,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="navbar-nav ms-auto">
 
-                    <a href="{{ route('home') }}" class="nav-item nav-link text-center @if($title == 'Home') active @endif mx-4">Home</a>                        
-                        <div class="dropdown">
-                                <a class="text-center nav-item nav-link text-center mx-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portfolio
-                                </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li>           
-                                    <a class="dropdown-item" href="">
-                                        <div class="d-flex align-items-center">
-                                            <img src="" height="60" class="rounded-circle" alt="">
-                                            <span class="mx-2">Daftar Mentor/Fasilitator</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>           
-                                    <a class="dropdown-item @if($title == 'Student') active @endif" href="{{ route('student') }}">
-                                    <div class="d-flex align-items-center">
-                                        <img src="" height="60" class="rounded-circle" alt="">
-                                            <span class="mx-2">Daftar E-Learning</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="nav-item nav-link text-center mx-4">About Me</a>
-                        <a href="" class="nav-item nav-link text-center mx-4">Service</a>
-                        <a href="" class="nav-item nav-link text-center mx-4">FAQ</a>
+                    <a href="" class="nav-item nav-link text-center mx-4" style="color: crimson; border-bottom: 2px solid crimson;">Home</a>                        
+                    <a href="" class="nav-item nav-link text-center mx-4">Portfolio</a>
+                    <a href="" class="nav-item nav-link text-center mx-4">About Me</a>
+                    <a href="" class="nav-item nav-link text-center mx-4">Services</a>
                 </div>
 
                 <div class="navbar-nav ms-auto">
@@ -85,15 +61,16 @@
 	</nav>
 
     <div class="main">
-        <img src="./assets/img/background4.png" alt="" class="bg">
+        <img src="./assets/img/background4.png" alt="background image" class="bg">
         <div class="content">
             <h5 class="text-dark mb-1" style="font-weight: normal;">Portfolio Website <strong class="text-danger">Neville Jeremy</strong></h5>
             <h1 class="text-dark mb-1" style="font-size: 42px;">
-                Hai! I'm Your Web Developer
+                Hi! I'm Your Web Developer
             </h1>
-            <p>Perkenalkan saya Neville Jeremy dan saya merupakan Fullstack Web & Mobile Developer</p>
+            <p>Perkenalkan saya Neville Jeremy dan saya merupakan Fullstack & Freelancer Web Development.</p>
             <a href="" class="btn btn-dark py-2">My Portfolio</a>
             <a href="./assets/download/cv.pdf" class="btn border border-dark py-2" download="CV Neville Jeremy">Download CV</a>
+        
         </div>
         <div class="imgBx">
             <img src="./assets/svg/coding.svg">
@@ -101,47 +78,52 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row" style="height: 20vh;">
-            Neville Jeremy
+        <div class="row mb-5 justify-content-between align-items-center" style="height: 20vh;">
+            <img src="./assets/logo_external/bootstrap.png" style="width: 15%;" alt="">
+            <img src="./assets/logo_external/google.png" style="width: 15%;" alt="">
+            <img src="./assets/logo_external/telkomdn.png" style="width: 15%;" alt="">
+            <img src="./assets/logo_external/gtmetrix.png" style="width: 15%;" alt="">
+            <img src="./assets/logo_external/vscode.png" style="width: 15%;" alt="">
         </div>
         
         <div class="row justify-content-center">
-            <div class="col-lg-5 px-3 py-2">
+            <div class="col-lg-5 px-2 pb-3">
                 <img src="./assets/img/nepil1.jpg" alt="nepil profil" style="height: 100%;width:100%;border-radius:8px">
             </div>
-            <div class="col-lg-5 px-3 d-flex justify-content-center flex-column">
+            <div class="col-lg-5 px-2 d-flex justify-content-center flex-column">
                 <span style="letter-spacing: 2px;" class="text-danger">
                     <strong>ABOUT ME</strong>
                 </span>
                 <h2>Who Am I?</h2>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi neque nesciunt iure reprehenderit, quasi consectetur quae quod vitae, assumenda non facilis est voluptate rerum porro nam! Doloremque, laudantium cum!</p>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod eligendi sit reiciendis deleniti esse? Ipsum, distinctio ipsa rem quos voluptates odio tenetur aspernatur nobis pariatur? Culpa ab beatae nam!</p>
-
+                
+                <p style="text-align: justify;">
+                    Salam kenal! Nama saya Neville Jeremy Onorato Laia, kalian bisa memanggil saya Neville. saya lahir di Medan dan saya masih duduk di bangku SMK yaitu SMK TELKOM MEDAN dan menekuni jurusan Rekayasa Perangkat Lunak (RPL).
+                </p>
+                <p style="text-align: justify;">
+                    Saya merupakan Profesional Web developer yang berorientasi detail dengan pengalaman 4 tahun sebagai freelancer dan Terampil dalam mengoperasikan berbagai platform dan mampu menjelaskan masalah software yang kompleks dalam istilah yang mudah dipahami.
+                </p>
                 <button class="my-2 btn btn-danger" style="border-radius: 0; width: 50%;">Explore Me</button>
             </div>
         </div>
 
-        <div class="row" style="height: 80vh;">
-            <div class="d-flex mt-4 flex-column align-items-center">
-                <h2 class="text-center">Beberapa Keahlian Saya</h2>
-                <span class="text-center"></span>
-            </div>
-        </div>
-        <div class="row" style="height: 90vh;">
+        <div class="row mt-5">
           <div class="col-lg-7 p-0">
             <div class="col-12 p-4" style="height: 75%;background:#fff6e5">
-                <h1>My Skills</h1>
-
+                <h1>Beberapa Keahlian Saya</h1>
             </div>
-            <div class="col-12 bg-dark position-relative" style="height: 25%;">    
+
+            <div class="col-12 bg-light position-relative" style="height: 25%;">    
                 mm
             </div>
-          </div>
-          <div class="col-lg-5 bg-primary">
-            testing
-          </div>
+          
+        </div>
+            <div class="col-lg-5 p-0 bg-primary">
+                <img src="./assets/img/nepil2.png" style="width: 100%;" alt="nepil2">
+            </div>
         </div>
     </div>
+
+    <h1>Neville</h1>
 
     <footer class="container-fluid bottom-0">
         <div class="row bg-dark py-5 text-light d-flex justify-content-evenly">
@@ -168,7 +150,7 @@
                     <p class="mb-0 text-light">About Me</p>
                 </a>
                 <a href="">
-                    <p class="mb-0 text-light">FAQ</p>
+                    <p class="mb-0 text-light">Services</p>
                 </a>
             </div>
 
