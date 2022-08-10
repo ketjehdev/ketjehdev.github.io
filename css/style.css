@@ -72,7 +72,7 @@
 
     .main .imgBx {
         position: absolute;
-        top: 27em;
+        top: 25em;
         width: 100%;
         bottom: 0;
     }
@@ -89,7 +89,7 @@
 @media (max-width: 480px) {
     .main .imgBx {
         position: absolute;
-        top: 25em;
+        top: 20em;
         width: 100%;
         bottom: 0;
     }
